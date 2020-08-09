@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="follow,index">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Login Page Bukalapak</title>
+    <meta name="description" content="🔐 An Open Source Template for Login Page From Scratch Without Any CSS Framework">
+    <meta name="keywords" content="login page css, login template, login css, login form template">
+
+    <link rel="stylesheet" href="./design.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <div class="logo-wrapper">
+        <img class="logo" alt="Logo" src="https://mazipan.github.io/login-page-css/favicon/favicon-32x32.png" />
+    </div>
+
+    <div class="content-body">
+        <div class="form-wrapper">
+            <h1 class="text-title">Login to your existed account of MuscleGeniX</h1>
+            <div class="text-register"><a href="#register">Login</a></div>
+
+            <div class="field-group">
+                <input class="input" type="text" id="txt-email" name="email" placeholder="Email" />
+                <input class="input" type="password" id="txt-password" name="password" placeholder="Password" />
+            </div>
+
+            <div class="field-group-inline">
+                <label for="chk-rememberme">
+                    <input class="checkbox" type="checkbox" id="chk-rememberme" name="rememberme" />
+                    Remember me
+                </label>
+            </div>
+
+            <div class="field-group">
+                <input class="btn-submit" type="submit" value="Login" />
+            </div>
+
+            <div class="separator-wrapper">
+                <div class="separator">
+                    <span>Socials Login</span>
+                </div>
+            </div>
+
+            <div class="field-group">
+                <a href="#login-facebook" class="link-social-login">
+                    <img src="./fb-logo.png" />
+                    Login with Facebook
+                </a>
+                <a href="#login-google" class="link-social-login">
+                    <img src="./google-logo.png" />
+                    Login with Google
+                </a>
+            </div>
+
+            <div class="footnote-wrapper">
+                <div class="footnote footnote-left">
+                    Don't have an Account?
+                    <br />
+                    <a href="./register.html">Get Register</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Start of Async Drift Code -->
+    <script>
+        "use strict";
+
+        !function () {
+            var t = window.driftt = window.drift = window.driftt || [];
+            if (!t.init) {
+                if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+                t.invoked = !0, t.methods = ["identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on"],
+                    t.factory = function (e) {
+                        return function () {
+                            var n = Array.prototype.slice.call(arguments);
+                            return n.unshift(e), t.push(n), t;
+                        };
+                    }, t.methods.forEach(function (e) {
+                        t[e] = t.factory(e);
+                    }), t.load = function (t) {
+                        var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+                        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+                        var i = document.getElementsByTagName("script")[0];
+                        i.parentNode.insertBefore(o, i);
+                    };
+            }
+        }();
+        drift.SNIPPET_VERSION = '0.3.1';
+        drift.load('nrng46u2vbn6');
+    </script>
+    <!-- End of Async Drift Code -->
+</body>
+
+</html>
